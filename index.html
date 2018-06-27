@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myapp"> 
+	<head>
+<!--		<meta HTTP-EQUIV="Refresh" CONTENT="600,index.html" /> -->
+        <title>Controles TD</title>
+        <link rel="stylesheet" href="estilos/hojaestilos.css" type="text/css" />
+	</head>
+	<body background="images/soft_white_background.jpg">
+
+		<form id="form1">
+        <table align="center" border="0" width="50%" bgcolor="#E5F1F9">
+            <tr><td align="left"><img src="images/logo_black_header.png"/></td>
+                <td align="center"><span class="titulo1">Control Ventas TD</span></td></tr>
+        </table>
+		
+		<p></p>
+		
+		<table align="center" border="1" width="80%">
+			<tr><td align="center" width="10%"><span class="titulo2">FECHA</td>
+				<td align="center" width="10%"><span class="titulo2">INTERFAZ</td>
+				<td align="center" width="10%"><span class="titulo2">PROCESO</td>
+				<td align="center" width="10%"><span class="titulo2">HORA INICIO</td>
+				<td align="center" width="10%"><span class="titulo2">HORA FIN</td>
+				<td align="center" width="10%"><span class="titulo2">REGISTROS CARGADOS</td>
+				<td align="center" width="10%"><span class="titulo2">ESTADO</td>
+				<td align="center" width="10%"><span class="titulo2">...</td>
+		</table>
+		
+		<h1>{{ 1 + 1 }}</h1>
+	
+	
+		<div ng-controller="cntrl">
+			<h1>{{mensaje}}</h1>
+		</div> 
+		
+		<div ng-controller="controlFile">
+			<h1>{{fetchContent()}}</h1>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+		<script src="scripts/script.js"></script>  
+
+	</body>
+</html>
+
+

@@ -1,0 +1,18 @@
+.titulo1 {
+	font-size: 36px;
+	font-family: Geneva,Arial,Helvetica,sans-serif;
+	color: blue;
+	font-weight: bold;
+}
+.titulo2 {
+	font-size: 12px;
+	font-family: Geneva,Arial,Helvetica,sans-serif;
+	color:  blue;
+        font-weight: bold;
+	}
+.normal1 {
+	font-size: 11px;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #0066cc;
+	font-weight: normal;
+}
