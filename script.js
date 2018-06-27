@@ -19,17 +19,13 @@ app.controller("controlSum",["$scope", function($scope) {
 
 
 app.controller("appController", function ($scope, $http, dataResource) {
-	
-	$http.get('scripts/content.json').success(function (data) {
-		$scope.datos = data;
-    });
-	
+
     $scope.datosResource = dataResource.get();
 });
 
 app.factory("dataResource", function ($resource) {
 	
-    return $resource("scripts/content.json", 
+    return $resource("content.json", 
         {}, { get: { method: "GET", isArray: true }
     })
 });
